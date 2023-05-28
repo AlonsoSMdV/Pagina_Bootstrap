@@ -1,0 +1,156 @@
+/*******************************************************************/
+/*                 Mi propio estilo para bootstrap                 */
+/* Nombre del sitio - hoja de estilo de index                      */
+/* Autor : Alonso Sánchez Moreno de Vega                           */
+/* Versión 1.0 - 8/5/2023                                          */
+/*                           bootstrap                             */
+/*******************************************************************/
+
+
+.background-body{background-color: #BE9B47;}
+/*Margin */
+.mb-8 {margin-bottom: 8rem;}
+.mb-10 {margin-bottom: 10rem;}
+.mr-8 {margin-right: 8rem;}
+.mr-10 {margin-right: 10rem;}
+.ml-5 {margin-left: 5rem;}
+.ml-7 {margin-left: 7rem;}
+.ml-8 {margin-left: 8rem;}
+.ml-10 {margin-left: 10rem;}
+
+/**** tuneo la barra de navegación ****/
+
+nav {position:sticky !important; /** es necesario poner !important **/
+     top:0;
+     opacity:0.8;
+     z-index: 99;}
+
+nav  a {color:white !important;}
+
+nav ul li ul a {color:black !important;}
+
+/**** tuneo el carousel ****/
+.carousel-control-prev,
+.carousel-control-next {color:black !important;
+                        opacity:0;}
+
+.vh-25 {height:25vh;}
+.dropdown-item:hover{color: black !important;}
+
+
+/**** título de sección personalizado *******/
+/*#hero{
+    
+  background-image: url(../Images/the_legend_of_zelda.png);  
+  width: 100%;        /*fondo*/
+  /*height: 90vh;                                       /*dimensiones al alto*/
+  /*background-repeat: no-repeat;                       /*no se repite*/
+  /*background-size: cover;                             /*ajustada al espacio disponible*/
+  /*background-position: center;                        /*la ajusto al espa*/
+  /*padding-top: 20px;
+
+}*/
+
+.titulo {font-size:2.5rem;
+         font-weight:bold;
+         text-align:center;
+         padding:3rem 0;
+         margin:3rem auto;
+         border-bottom:2px solid #BE9B47;
+         width:50%;}
+/**************media queries****************************************/
+@media only screen and (width<750px){
+
+    .titulo    {font-size:1.8rem;
+                width:80%;
+    }
+    .col2 img{
+      margin: auto;
+      width: 80%;
+      height: 80%;
+    }
+    .BackHero{
+      width: 80%;
+      height: 80%;
+      padding-left: 5rem;
+    }
+    .textoIntro{
+      font-size: 1rem;
+    }
+    .grid2{grid-template-columns: 100%;
+      font-size: 1rem;}
+    .grid2-2{grid-template-columns: 100%;
+      font-size: 1rem;
+      margin: 0%;
+
+    }
+}
+@media only screen and (width<=1200px) {
+  #titulo{
+    font-size: 2.25rem;
+  }
+  .BackHero{
+    width: 90%;
+    height: 90%;
+    padding-left: 2.5rem;
+  }
+  .col2 img{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+  }
+
+        .grid2{grid-template-columns: 100%;
+        font-size: 1.5rem;}
+
+        .grid2-2{grid-template-columns: 100%;
+        font-size: 1rem;}
+
+}
+
+
+/*Texto e imagenes de las columnas en las secciones*/
+.texto{
+  padding: 20px;
+}
+
+.col2 img{
+  margin: auto;
+    display: block;
+}
+
+
+/***** para personalizar el botón leer más de una card ****/
+.leer-card {text-decoration: none;
+            color:#198754;
+            font-weight:bold;}
+
+.leer-card:hover {color:blue;}
+
+/***** si quiero usar un font-awesome icon en la card *****/
+
+.card .fa {font-size:8rem;
+           display:block; /**** para centrar el fa *****/
+           margin:auto;
+           }
+
+/* .card {text-align:center;}  esto lo centra TODO en la card ***/
+
+/***** para estilar los iconos de font-awesome *****/
+
+footer p, footer h2 {text-align:center;}
+
+footer .fa {font-size:2rem;
+            color: white;
+            }
+
+footer a {text-decoration: none;
+          color:white;
+          font-weight: bold;}
+
+footer a:hover {background-color: #BE9B47;
+                color:#198754;
+                padding:5px;}
+footer .fa:hover{background-color: #BE9B47;
+  color:#198754;
+  padding:10px;}
